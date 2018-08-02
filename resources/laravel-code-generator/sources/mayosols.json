@@ -1,0 +1,130 @@
+{
+    "fields": [
+        {
+            "name": "Mayorista_Id",
+            "labels": "Mayorista",
+            "html-type": "select",
+            "css-class": "",
+            "options": {},
+            "html-value": null,
+            "validation": "",
+            "is-on-index": false,
+            "is-on-show": false,
+            "is-on-form": false,
+            "data-type": "int",
+            "data-type-params": [],
+            "data-value": null,
+            "is-index": true,
+            "is-unique": false,
+            "is-primary": true,
+            "comment": null,
+            "is-nullable": true,
+            "is-header": false,
+            "is-unsigned": true,
+            "is-auto-increment": false,
+            "is-inline-options": false,
+            "is-date": false,
+            "date-format": "",
+            "cast-as": "",
+            "placeholder": "Select mayorista",
+            "delimiter": "; ",
+            "range": [],
+            "foreign-relation": {
+                "name": "mayoristum",
+                "type": "belongsTo",
+                "params": [
+                    "App\\Models\\Mayoristum",
+                    "Mayorista_Id",
+                    "Id"
+                ],
+                "field": "id"
+            },
+            "foreign-constraint": {
+                "field": "Mayorista_Id",
+                "references": "mayorista",
+                "on": "Id",
+                "on-delete": "no action",
+                "on-update": "no action",
+                "references-model": "App\\Models\\Mayoristum",
+                "is-self-reference": false
+            },
+            "on-store": null,
+            "on-update": null
+        },
+        {
+            "name": "Solucion_Id",
+            "labels": "Solucion",
+            "html-type": "select",
+            "css-class": "",
+            "options": {},
+            "html-value": null,
+            "validation": "required",
+            "is-on-index": true,
+            "is-on-show": true,
+            "is-on-form": true,
+            "data-type": "int",
+            "data-type-params": [],
+            "data-value": null,
+            "is-index": true,
+            "is-unique": false,
+            "is-primary": false,
+            "comment": null,
+            "is-nullable": false,
+            "is-header": false,
+            "is-unsigned": true,
+            "is-auto-increment": false,
+            "is-inline-options": false,
+            "is-date": false,
+            "date-format": "",
+            "cast-as": "",
+            "placeholder": "Select solucion",
+            "delimiter": "; ",
+            "range": [],
+            "foreign-relation": {
+                "name": "solucion",
+                "type": "belongsTo",
+                "params": [
+                    "App\\Models\\Solucion",
+                    "Solucion_Id",
+                    "Id"
+                ],
+                "field": "id"
+            },
+            "foreign-constraint": {
+                "field": "Solucion_Id",
+                "references": "solucion",
+                "on": "Id",
+                "on-delete": "no action",
+                "on-update": "no action",
+                "references-model": "App\\Models\\Solucion",
+                "is-self-reference": false
+            },
+            "on-store": null,
+            "on-update": null
+        }
+    ],
+    "relations": [],
+    "indexes": [
+        {
+            "name": "PRIMARY",
+            "type": "index",
+            "columns": [
+                "Mayorista_Id",
+                "Solucion_Id"
+            ]
+        }
+    ],
+    "auto-manage-created-and-updated-at": false,
+    "table-name": "mayosol",
+    "protection": {
+        "is-model-protected": false,
+        "is-controller-protected": false,
+        "is-form-request-protected": false,
+        "is-languages-protected": false,
+        "is-form-view-protected": false,
+        "is-index-view-protected": false,
+        "is-create-view-protected": false,
+        "is-edit-view-protected": false,
+        "is-show-view-protected": false
+    }
+}

@@ -1,0 +1,37 @@
+[
+    {
+        "model-name": "cliente",
+        "resource-file": "clientes.json",
+        "table-name": "cliente"
+    },
+    {
+        "model-name": "empresa",
+        "resource-file": "empresas.json",
+        "table-name": "empresa"
+    },
+    {
+        "model-name": "mayorista",
+        "resource-file": "mayoristas.json",
+        "table-name": "mayorista"
+    },
+    {
+        "model-name": "mayosol",
+        "resource-file": "mayosols.json",
+        "table-name": "mayosol"
+    },
+    {
+        "model-name": "prevend",
+        "resource-file": "prevends.json",
+        "table-name": "prevend"
+    },
+    {
+        "model-name": "solucion",
+        "resource-file": "solucions.json",
+        "table-name": "solucion"
+    },
+    {
+        "model-name": "vend",
+        "resource-file": "vends.json",
+        "table-name": "vend"
+    }
+]
