@@ -24,6 +24,9 @@
     <link href="{{ asset('css/demo-page.css')}}" rel="stylesheet">
     <link href="{{ asset('css/hover.css') }}" rel="stylesheet">
     <link rel="stylesheet" href="{{ asset('css/materialize.min.css') }}">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+        integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+        crossorigin="anonymous">
 
 </head>
 <body>
@@ -91,8 +94,8 @@
             </ul>
 
             <div class="btn-group btn-group-sm pull-right" role="group">
-                <a href="{{ route('oportunidads.oportunidad.index') }}" class="hvr-sweep-to-left" title="Show All Oportunidad">
-                    <h4>Atras</h4>
+                <a href="{{ route('oportunidads.oportunidad.index') }}" class="btn btn-primary hvr-sweep-to-left" title="Show All Oportunidad">
+                    <span class="fas fa-list-ol" aria-hidden="true"> Mostrar Oportunidades</span>
                 </a>
             </div>
 
@@ -103,7 +106,7 @@
                </div>
                <div class="col-sm-6 ">
                  <br>
-                 <div class="card">
+                 <div class="card z-depth-4">
                  <div class="card-header">
                    <table>
                  <td><h5>Oportunidad</h5></td> <td><h5>:</h5></td> <td><h5>{{ $oportunidad->Nombre }}</h5></td>
@@ -193,10 +196,10 @@
                </div>
                <div class="col-sm-6 ">
                  <br>
-                 <div class="card">
+                 <div class="card z-depth-4">
                  <div class="card-header">
                    <table>
-                 <td><h5>Nombre Cliente</h5></td> <td><h5>:</h5></td> <td><h5>{{ $oportunidad->cliente->Nombre }}</h5></td>
+                 <td><h5>Cliente</h5></td> <td><h5>:</h5></td> <td><h5>{{ $oportunidad->cliente->Nombre }}</h5></td>
                  </table>
                  </div>
                  <div class="card-body">
@@ -246,7 +249,7 @@
                </div>
                <div class="col-sm-6 ">
                  <br>
-                 <div class="card">
+                 <div class="card z-depth-4">
                  <div class="card-header">
                    <table>
                  <td><h5>Solucion</h5></td> <td><h5>:</h5></td> <td><h5>{{ $oportunidad->solucion->Solucion }}</h5></td>
@@ -283,7 +286,7 @@
                </div>
                <div class="col-sm-6 ">
                  <br>
-                 <div class="card">
+                 <div class="card z-depth-4">
                  <div class="card-header">
                    <table>
                  <h5>Vendedor</h5>

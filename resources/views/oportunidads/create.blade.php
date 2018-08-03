@@ -2,6 +2,10 @@
 
 @section('content')
 
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+    integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+    crossorigin="anonymous">
+    
     <div class="panel panel-default">
 
         <div class="panel-heading clearfix">
@@ -11,9 +15,9 @@
             </span>
 
             <div class="btn-group btn-group-sm pull-right" role="group">
-                <a href="{{ route('oportunidads.oportunidad.index') }}" class="hvr-sweep-to-left" title="Show All Oportunidad">
-                    <h4>Atras</h4>
-                </a>
+              <a href="{{ route('oportunidads.oportunidad.index') }}" class="btn btn-primary" title="Show All Oportunidad">
+                  <span class="fas fa-list-ol" aria-hidden="true"> Mostrar Oportunidades</span>
+              </a>
             </div>
 
         </div>

@@ -24,6 +24,12 @@
     <link href="{{ asset('css/demo-page.css')}}" rel="stylesheet">
     <link href="{{ asset('css/hover.css') }}" rel="stylesheet">
 
+    <!-- Scripts -->
+    <script src="{{ asset('js/jquery.min.js') }}" defer></script>
+    <script src="{{ asset('js/materialize.min.js') }}" defer></script>
+    <script src="{{ asset('js/popper.min.js') }}" defer></script>
+    <script src="{{ asset('js/bootstrap.min.js') }}" defer></script>
+
 </head>
 <body>
     <div id="app">
@@ -80,10 +86,7 @@
             @yield('content')
         </main>
     </div>
-    <!-- Scripts -->
-    <script src="{{ asset('js/materialize.min.js') }}" defer></script>
-    <script src="{{ asset('js/jquery.min.js') }}" defer></script>
-    <script src="{{ asset('js/popper.min.js') }}" defer></script>
-    <script src="{{ asset('js/bootstrap.min.js') }}" defer></script>
+
+
 </body>
 </html>

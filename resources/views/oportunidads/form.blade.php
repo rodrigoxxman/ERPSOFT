@@ -1,6 +1,5 @@
+
 <div class="card">
-
-
 <div class="form-group {{ $errors->has('Nombre') ? 'has-error' : '' }}">
     <label for="Nombre" class="col-md-2 control-label">Nombre</label>
     <div class="col-md-10">
@@ -9,17 +8,14 @@
     </div>
 </div>
 
-
-
-
 <?php
 $t=date("d-m-Y");
 ?>
 
-<div class="form-group {{ $errors->has('FechaOp') ? 'has-error' : '' }}">
+<div hidden class="form-group {{ $errors->has('FechaOp') ? 'has-error' : '' }}">
     <label for="FechaOp" class="col-md-2 control-label">Fecha Op</label>
     <div class="col-md-10">
-        <input class="form-control" name="FechaOp" type="text" id="FechaOp" value="{{ old('$t', optional($oportunidad)->FechaOp)}}" required="true" placeholder="Ingresa la fecha de la oportunidad aquí...">
+        <input class="form-control datepicker" name="FechaOp" type="text" id="FechaOp" value="{{ old( 'FechaOp', optional($oportunidad)->FechaOp)}}" required="true" placeholder="Ingresa la fecha de la oportunidad aquí...">
         {!! $errors->first('FechaOp', '<p class="help-block">:message</p>') !!}
     </div>
 </div>
@@ -27,7 +23,7 @@ $t=date("d-m-Y");
 <div class="form-group {{ $errors->has('FechaCierre') ? 'has-error' : '' }}">
     <label for="FechaCierre" class="col-md-2 control-label">Fecha Cierre</label>
     <div class="col-md-10">
-        <input class="form-control" style="width: 20%;" name="FechaCierre" type="text" id="FechaCierre" value="{{ old('FechaCierre', optional($oportunidad)->FechaCierre) }}" required="true" placeholder="Ingresa la fecha de cierre aquí...">
+        <input class="form-control datepicker" style="width: 20%;" name="FechaCierre" type="text" id="FechaCierre" value="{{ old('FechaCierre', optional($oportunidad)->FechaCierre) }}" required="true" placeholder="Ingresa la fecha de cierre aquí...">
         {!! $errors->first('FechaCierre', '<p class="help-block">:message</p>') !!}
     </div>
 </div>
@@ -239,5 +235,4 @@ $t=date("d-m-Y");
         {!! $errors->first('Mayorista_Id', '<p class="help-block">:message</p>') !!}
     </div>
 </div>
-
 </div>
