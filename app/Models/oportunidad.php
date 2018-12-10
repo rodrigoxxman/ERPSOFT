@@ -50,6 +50,8 @@ class oportunidad extends Model
                   'Relevante',
                   'Registrado',
                   'Codigo',
+                  'Facturado',
+                  'Numfactura',
                   'Cliente_Id',
                   'Cliente_Empresa_Id',
                   'Prevend_Id',

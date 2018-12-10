@@ -18,10 +18,10 @@
                         <div>Acceso como administrador</div>
                     @else
                     <script type="text/javascript">
-                    window.location = 'test/';//here double curly bracket
+                    window.location = 'oportunidads/';//here double curly bracket
                     </script>
                     @endif
-                    You are logged in!
+                    Bienvenido!
 
                   </div>
 
@@ -45,12 +45,12 @@
     <h2>Graficas</h2>
   </button>
 
-    <button type="button" name="button" onClick="document.location.href='config'" style="width: 30%; margin-left:20%;">
-    <h2>En pRoceso</h2>
+    <button type="button" name="button" onClick="document.location.href='users'" style="width: 30%; margin-left:20%;">
+    <h2>Usuarios</h2>
     </button>
 
     <button type="button" name="button" onClick="document.location.href='logout'" style="width: 30%; margin-right:20%">
-    <h2>En pRoceso</h2>
+    <h2>Configuracion</h2>
     </button>
   </div>
 

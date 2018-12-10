@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Inicio de Sesion</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+            
+
+    <!-- Scripts -->
+</head>
+<body>
+          <div class="card whitesmoke z-depth-5">
+            <div id="tit" class="card-content black-text">
+                <span class="card-title">Inicio de Sesion</span>
+              </div>
+              <hr>
+            <div class="card-content black-text">
+                            <!--Direccion de Correo-->
+                            <div class="input-field">
+                                <i class="material-icons prefix">face</i>
+                                <input id="mail" type="text" 
+                                class="validate form-control{{ $errors->has('email') ? ' is-invalid' : '' }}" 
+                                value="{{ old('email') }}" required autofocus>
+                                <label for="icon_prefix">Nombre</label>
+                                @if ($errors->has('email'))
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $errors->first('email') }}</strong>
+                                    </span>
+                                @endif
+                            </div>
+
+                            <!--Password-->
+                            <div class="input-field">
+                                    <i class="material-icons prefix">mail</i>
+                                    <input id="password" type="password" 
+                                    class="validate form-control{{ $errors->has('password') ? ' is-invalid' : '' }}" 
+                                    name="password" required>
+                                    <label for="icon_prefix">Correo</label>
+                                    @if ($errors->has('password'))
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $errors->first('password') }}</strong>
+                                    </span>
+                                @endif
+                            </div>
+                           
+                           <button class="btn waves-effect waves-light" type="submit" id="ing">Registrar
+                                <i class="material-icons right">send</i>
+                              </button>
+                              <div class="row">
+                            <a id="reest" href="{{ route('login') }}">Regresar</a>
+                        </div>
+            </div>
+          </div>
+</body>
+</html>
+

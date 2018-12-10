@@ -8,7 +8,7 @@
                 <div class="card-header">{{ __('Register') }}</div>
 
                 <div class="card-body">
-                    <form class="form-horizontal" role="form" method="POST" action="{{url('/complete/{id}')}}" aria-label="{{ __('Register') }}">
+                    <form class="form-horizontal" role="form" method="POST" action="{{url('/complete/'.$id)}}">
                         @csrf
 
                         <div class="form-group row">

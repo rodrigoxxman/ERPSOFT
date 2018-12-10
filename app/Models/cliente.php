@@ -69,7 +69,4 @@ class cliente extends Model
     {
         return $this->hasOne('App\Models\Oportunidad','Cliente_Empresa_Id','Empresa_Id');
     }
-
-
-
 }

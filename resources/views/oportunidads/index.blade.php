@@ -29,6 +29,12 @@
             <div class="pull-left">
                 <h4 class="mt-3 mb-4">Oportunidades</h4>
             </div>
+            <a class="dropdown-item" href="{{ route('logout') }}"
+                                       onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();">
+                                        {{ __('Logout') }}
+                                    </a>
+
 
             <div class="btn-group btn-group-sm pull-right" role="group">
                 <a href="{{ route('oportunidads.oportunidad.create') }}" class="btn btn-success hvr-sweep-to-left" title="Create New Oportunidad">

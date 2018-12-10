@@ -1,0 +1,41 @@
+body{
+    margin: 0%;
+    padding: 0%;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(to bottom left, #00ffcc 0%, #3366cc 200%);
+}
+div.card{
+    margin-top: 4%;
+    margin-left: 30%;
+    margin-right: 30%;
+    width: 40%;
+    height: 50%;
+    padding: 4%;
+}
+    div#tit{
+        text-align: center;
+    }
+    div.input-field{
+        width: 100%;
+        height: 100%;
+    }
+    label#remember{
+        float: left;
+        width: 100%;
+        margin-bottom: 5%;
+    }
+    button#ing{
+        margin-left: 30%;
+        margin-right: 30%;
+        height: 100%;
+    }
+    a#reest{
+        float: left;
+        margin: 4%;
+        
+    }
+    a#reg{
+        float: left;
+        margin: 4%;
+    }

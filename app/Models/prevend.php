@@ -59,7 +59,4 @@ class prevend extends Model
     {
         return $this->hasOne('App\Models\Oportunidad','Prevend_Id','Id');
     }
-
-
-
 }
